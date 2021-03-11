@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.fila1, .fila2, .fila3{
+    display: flex;
+    width: 100%;
+}
+.postIt{
+    width: 240px;
+    height: 240px;
+    display: flex;
+    overflow: hidden;
+}
+
+.text{
+    overflow: hidden;
+    width: 190px;
+    height: 190px;
+    position: static;
+    resize: none;
+    background-color: yellow;
+    opacity: 0.9;
+    border-bottom-right-radius: 25%;
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+.text:empty{
+    opacity: 0.5;
+}
+.text:hover{
+    border: 2px solid gray;
+    width: 205px;
+    height: 210px;
+    opacity: 0.9;
+}
+.text:focus{
+    outline: 0 solid transparent;
+    border: 2px solid black;
+    opacity: 0.9;
+    width: 205px;
+    height: 210px;
+}
+
+
